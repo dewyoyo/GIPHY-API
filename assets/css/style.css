@@ -1,0 +1,528 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 34px;
+    color: #777777;
+    background: url("../images/stripes-light.png");
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* =============sticky footer styling================= */
+  /* https://css-tricks.com/snippets/css/sticky-footer/ */
+  
+  html,
+  body {
+    height: 100%;
+    margin: 0 auto -105px;
+  }
+  
+  .wrapper {
+    height: auto !important;
+    height: 100%;
+    min-height: 100%;
+    margin: 0 auto -105px;
+  }
+  
+  footer,
+  .push {
+    height: 105px;
+  }
+  /* end sticky footer styling */
+  
+  /* =====================general =======================*/
+  
+  .container {
+    width: 100%;
+    max-width: 960px;
+    margin-left: 30px;
+    clear: both;
+  }
+  
+  h1,
+  h2,
+  h3,
+  p {
+    margin-bottom: 20px;
+    margin-top:0px;
+  }
+  
+  p:last-child {
+    margin-bottom: 0;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight: 700;
+    color: #4aaaa5;
+  }
+  
+  h1 {
+    padding-bottom: 20px;
+    font-size: 30px;
+    line-height: 49px;
+    border-bottom: 3px solid #dddddd;
+  }
+  
+  h2,
+  h3 {
+    font-size: 22px;
+  }
+  
+  /* header */
+  
+  #masthead {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    /* margin: 0 0 30px; */
+    overflow: auto;
+    color: #ffffff;
+    background: #ffffff;
+    border-bottom: 2px solid #cccccc;
+  }
+  
+  #logo {
+    float: left;
+    width: 250px;
+    height: 90px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 90px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    background: #4aaaa5;
+  }
+  
+  nav {
+    float: right;
+    margin-top: 25px;
+  }
+  
+  nav a {
+    display: inline-block;
+    padding-left: 15px;
+    margin-left: 15px;
+    line-height: 18px;
+    color: #999;
+    text-decoration: none;
+    border-left: 1px solid #efefef;
+  }
+  
+  nav a:first-child {
+    border-left: 0 none;
+  }
+  
+  /* footer */
+  
+  
+  footer {
+    padding: 30px 0;
+    clear: both;
+    font-size: 12px;
+    color: #ffffff;
+    color: #cccccc;
+    text-align: center;
+    background: #666666;
+    border-top: 8px solid #4aaaa5;
+    height: 50px;
+  }
+  
+  h3, h2 {
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    line-height: 22px;
+    border-bottom: 2px solid #eeeeee;
+  }
+  
+  /* main */
+  
+  #main-container {
+    padding-top: 130px;
+    min-height: calc(100vh - 70px);
+  }
+  
+  .main-section {
+    float: left;
+    width: 100%;
+    max-width: 960px;
+    padding: 30px;
+    margin: 0 0 40px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+  }
+  
+  /* ==================portfolio page======================== */
+  
+  .work {
+    position: relative;
+    float: left;
+    width: 274px;
+    margin: 20px 0 25px;
+    overflow: auto;
+  }
+  
+  .work:nth-child(even) {
+    margin-right: 40px;
+  }
+  
+  .work img {
+    width: 100%;
+    border: 0 none;
+    opacity: 0.8;
+  }
+  
+  .work h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+    background: #4aaaa5;
+    border-bottom: 0;
+  }
+  
+  .auth-image {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+  
+  /* =======================contact page===================== */
+  
+  label,
+  input[type=text],
+  input[type=email],
+  textarea {
+    display: block;
+    width: 100%;
+  }
+  
+  input[type=text],
+  input[type=email],
+  textarea {
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #dddddd;
+  }
+  
+  textarea {
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  
+  input[type=submit] {
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    background: #4aaaa5;
+    border: 0 none;
+  }
+  
+  #bigtitle {
+    float: left;
+    width: 100%;
+    /* max-width: 960; */
+    height: 90px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 90px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    background: #4aaaa5;
+  }
+  
+  
+  #directions-text {
+    margin: 15px;
+    padding: 15px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    /* border-style: dotted; */
+    font-size : 35pt;
+    color : #4aaaa5;
+  }
+  #userchoice-text {
+    font-size : 20pt;
+    margin: 15px;
+  }
+  #letteralready-text{
+    font-size : 20pt;
+    margin: 15px;
+  }
+  #wins-text{
+    font-size : 20pt;
+    margin: 15px;
+  }
+  #remaining-text{
+    font-size : 20pt;
+    margin: 15px;
+  }
+  #numberofgames-text{
+    font-size : 20pt;
+    margin: 15px;
+  }
+  #hangmanimg {
+    float: right; 
+    margin-right : 30px;
+  }
+  
+  /* ======================================================= */
+  /* ==================screen animation==================== */
+  
+  /* hangman page */
+  #directions-text {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #777777; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+   /* letter-spacing: .15em; *//* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #777777; }
+  }
+  
+  /* #bigtitle {
+    animation: move 3s;
+    -webkit-animation: move 3s;
+  }
+  
+  @keyframes move {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+               
+  @-webkit-keyframes move {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  */
+/* ========================== unit-r-game ========================*/
+  .char-image {
+    width: 150px;
+    height: 150px;
+    border: double 7px #777777;
+    border-radius: 16px;
+    -webkit-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
+    padding: 7px;
+  }
+
+  button {
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    background: #4aaaa5;
+    border: 0 none;
+  }
+
+  
+/* Hover Pseudo Class:
+    Changes the style only when mouse hovers
+    over the preceding element.
+*/
+.char-image:hover {
+  border: dashed 5px #DAA520;
+}
+
+/* ========================== trivia game ========================*/
+
+#triv-container {
+  padding-top: 130px;
+  min-height: calc(100vh - 70px);
+  text-align: center;
+}
+
+h4:hover {
+border: dashed 5px #dddddd;
+background: #4aaaa5;
+color: #ffffff;
+}
+
+#remaining-time {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 22pt;
+  /* color: blue */
+}
+.ques-div{
+  font-family: 'Times New Roman', Times, serif;
+}
+.ques-div{
+  font-size: 18pt;
+}
+#trivia-img {
+  width: 200px;
+  height: 200px;
+  border: solid 5px #777777;
+}
+
+/* ========================== GIPHY API ========================*/
+.gif-btn {
+  padding: 10px;
+  margin: 5px;
+  font-size: 18px;
+  color: #ffffff;
+  background: #4aaaa5;
+  border: solid none;
+  border-radius: 10px;
+}
+
+#category-add {
+  float : right;
+}
+  /* ======================================================= */
+  /* ==================screen resolution==================== */
+  /*  ##Screen = B/w 980px  */
+  @media screen and (max-width: 980px) {
+  
+    .container {
+      width: 100%;
+    }
+   
+    #masterhead {
+      width: 100%;
+    }
+  
+    #logo {
+      position: relative;
+    }
+  
+    nav {
+      position: relative;
+      margin-right: 50px;
+    }
+  
+   .main-section{
+      width: 100%;
+      margin-right: 100px;
+    }
+  
+  }
+  /*  ##Screen = B/w 768px  */
+  @media screen and (max-width: 768px) {
+  
+    .container {
+      width: 100%;
+      /* margin-right: 50px; */
+    }
+   
+    #masterhead {
+      width: 100%;
+    }
+  
+    #logo {
+      position: relative;
+    }
+  
+    nav {
+      position: relative;
+      margin-right: 50px;
+    }
+   
+    #main-container{
+      padding-right :40px;
+    }
+   .main-section{
+      width: 100%;
+    }
+  
+  }
+  
+  /*  ##Screen = B/w 640px  */
+  @media screen and (max-width: 640px) {
+  
+    .container {
+      margin-left: 0px;
+      /* margin:none; */
+      padding:5px;
+    }
+   
+    #masterhead {
+      clear: both;
+      background-color: black;
+      margin: none;
+    }
+  
+    #logo {
+      clear: both;
+      background-color: #4aaaa5;
+      margin: none;
+      border:none;
+      float:left;
+      width: 100%;
+    }
+  
+    nav {
+      clear: both;
+      float:left;
+      width: 100%;
+      margin-top: 0px;
+      padding:5px;
+      text-align: center;
+    }
+  
+    #main-container{
+      padding-right :40px;
+    }
+   .main-section{
+     padding:15px;
+     margin:30px 20px ;
+    }
+  
+    h1 {
+      padding:5px;
+      font-size: 30px;
+      border-bottom: 3px solid #dddddd;
+    }
+    .auth-image {
+      float: left;
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  
