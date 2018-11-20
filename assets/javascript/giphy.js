@@ -121,11 +121,17 @@ $("#add-category").on("click", function (event) {
     // This line grabs the input from the textbox
     var category = $("#category-input").val().trim();
 
-    // Adding movie from the textbox to our array
-    categoryList.push(category);
-    console.log("added categoryList" + categoryList);
-    // Calling renderButtons which handles the processing of our movie array
-    renderButtons();
+    // if userinput is not in the categoryList Adding movie from the textbox to our array
+    if (categoryList.indexOf(category) != -1) {
+        alert(" You already picked the category !!");
+    }
+    else {
+        categoryList.push(category);
+        console.log("added categoryList" + categoryList);
+        // Calling renderButtons which handles the processing of our movie array
+        renderButtons();
+    }
+    $("#category-input").val("");
 });
 
 // Adding a click event listener to all elements with a class of "movie-btn"
