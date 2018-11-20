@@ -4,7 +4,16 @@ var categoryList = [
     "dog",
     "bird",
     "cartoon",
-    "comedy"
+    "comedy",
+    "game",
+    "comedy",
+    "kids",
+    "turtle",
+    "ski",
+    "thanksgiving",
+    "panda",
+    "jerusalem",
+    "president"
 ];
 
 var catButton = $("<button>");
