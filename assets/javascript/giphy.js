@@ -16,22 +16,16 @@ var categoryList = [
     "president"
 ];
 
-var catButton = $("<button>");
-catButton.attr("data-category", categoryList[0]);
-$("#category-list").append(catButton);
-
 // Function for displaying movie data
 function renderButtons() {
 
     // Deleting the movies prior to adding new movies
-    // (this is necessary otherwise you will have repeat buttons)
     $("#category-list").empty();
 
     // Looping through the array of movies
     for (var i = 0; i < categoryList.length; i++) {
         console.log(categoryList[i]);
-        // Then dynamicaly generating buttons for each movie in the array
-        // This code $("<button>") is all jQuery needs to create the beginning and end tag. (<button></button>)
+
         var a = $("<button>");
         // Adding a class of movie-btn to our button
         a.addClass("gif-btn");
@@ -48,10 +42,14 @@ renderButtons();
 
 function displayCategory() {
     var category = $(this).attr("data-category");
+    
+    // var api_key = "dc6zaTOxFJmzC";
+    var api_key = "xyM2FvrJ1z6Db05AfjJl3urKVA7fw8Nr";
+    var imgLimit = 10;
 
     // Constructing a URL to search Giphy for the name of the category who said the quote
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-        category + "&api_key=dc6zaTOxFJmzC&limit=10";
+        category + "&api_key=" + api_key + "&limit=" + imgLimit;
 
     // Performing our AJAX GET request
     $.ajax({
@@ -124,7 +122,7 @@ $('#gifs-appear-here').on('click', '.cat-image', function () {
     }
 });
 
-// This function handles events where a movie button is clicked
+
 $("#add-category").on("click", function (event) {
     event.preventDefault();
     // This line grabs the input from the textbox
@@ -145,6 +143,3 @@ $("#add-category").on("click", function (event) {
 
 // Adding a click event listener to all elements with a class of "movie-btn"
 $(document).on("click", ".gif-btn", displayCategory);
-
-//   // Calling the renderButtons function to display the intial buttons
-//   renderButtons();
